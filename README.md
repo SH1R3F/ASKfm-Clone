@@ -15,5 +15,5 @@ Cloning ASKfm to study and practice:
 3. Get your frontend up and running
    1. `cd frontend`
    2. `npm install`
-   3. `npm run dev`
+   3. `npm start`
 Now you're ready to start developing.
