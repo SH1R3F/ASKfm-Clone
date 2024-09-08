@@ -119,23 +119,25 @@ function Socials() {
 export default function Footer() {
   const { t } = useTranslation();
   return (
-    <footer class="container mx-auto flex flex-col flex-wrap items-center pt-6 text-center text-xs font-medium">
-      {Users()}
+    <footer class="bg-white pt-6">
+      <div className="container mx-auto flex flex-col flex-wrap items-center text-center text-xs font-medium">
+        {Users()}
 
-      {Menu()}
+        {Menu()}
 
-      <div className="mb-5 flex w-full justify-between">
-        {/*Language switcher*/}
-        <div>
-          <span className="me-1 text-gray-500">{t("Language")}:</span>
-          <a className="transition-colors hover:text-gray-500" href="/#">
-            {t("English")}
-          </a>
-        </div>
+        <div className="mb-5 flex w-full justify-between">
+          {/*Language switcher*/}
+          <div>
+            <span className="me-1 text-gray-500">{t("Language")}:</span>
+            <a className="transition-colors hover:text-gray-500" href="/#">
+              {t("English")}
+            </a>
+          </div>
 
-        <div className="flex items-center gap-4">
-          {Socials()}
-          <span className="text-gray-500">&copy; {t("Ask.fm 2024")}</span>
+          <div className="flex items-center gap-4">
+            {Socials()}
+            <span className="text-gray-500">&copy; {t("Ask.fm 2024")}</span>
+          </div>
         </div>
       </div>
     </footer>

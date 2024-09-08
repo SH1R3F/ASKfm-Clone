@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import Logo from "../assets/images/logo.png";
 import Background from "../assets/images/background.jpg";
+import { Link } from "react-router-dom";
 
 export default function Index() {
   const { t } = useTranslation();
@@ -17,14 +18,14 @@ export default function Index() {
         {t("Anonymously!")}
       </h1>
 
-      <a className="hover:underline" href="/#">
+      <Link to="/signup" className="hover:underline">
         {t("Create a new account")}
-      </a>
+      </Link>
       <span>
         {t("Already have an account?")}
-        <a className="ms-2 text-red-500 hover:underline" href="/#">
+        <Link to="/login" className="ms-2 text-red-500 hover:underline">
           {t("Log in")}
-        </a>
+        </Link>
       </span>
     </div>
   );

@@ -14,15 +14,8 @@ const routes = [
         index: true,
         element: <Index />,
       },
-    ],
-  },
-  {
-    path: "/auth",
-    element: <Auth />,
-    errorElement: <ErrorPage />,
-    children: [
       {
-        path: "/auth/signup",
+        path: "/signup",
         element: <Signup />,
       },
     ],
